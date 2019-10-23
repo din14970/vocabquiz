@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import os
 import random
 
@@ -27,7 +26,11 @@ def get_vocablist(list_file = None):
         allvoc = [filename for filename in allfiles if filename.endswith(".csv") or filename.endswith(".xls") or filename.endswith(".xlsx")]
         list_file = allvoc[0]
 
-    vocab_list = pd.read_excel(list_file)
+    if list_file.endswith(".xls") or filename.endswith(".xlsx"):
+        vocab_list = pd.read_excel(list_file)
+    else:
+        vocab_list = pd.read_csv(list_file)
+    
     print("Imported {}".format(list_file))
     return vocab_list
 
