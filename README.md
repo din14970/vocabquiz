@@ -1,4 +1,4 @@
-#Vocab quiz script
+# Vocab quiz script
 
 This script is a python terminal program acting as a digital alternative to flash cards for learning vocab words. Applications include learning definitions of english vocab words, learning foreign language words, learning certain programming commands, ... anything whereby one wishes to learn one-to-one relationships between columns of data by heart.
 
